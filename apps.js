@@ -2,7 +2,7 @@ const input = document.querySelector("#phrase");
 const button = document.querySelector(".btn");
 const output = document.querySelector(".translation");
 
-const morseCode = {
+const translation = {
   A: ".-",
   B: "-...",
   C: "-.-.",
@@ -35,7 +35,7 @@ const convertToMorse = () => {
   const string = input.value;
   const upperCase = string.toUpperCase().split("");
   const newArr = upperCase.map((letter) => {
-    return morseCode[letter];
+    return translation[letter];
   });
   console.log(newArr.join());
 };
