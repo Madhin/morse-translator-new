@@ -97,7 +97,7 @@ const morseConversion = () => {
   console.log(newArr);
   const string = newArr.toString();
   console.log(string);
-  const noCommas = string.replace(/,/g, "");
+  const noCommas = string.replace(/,/g, " ");
   output1.innerHTML = noCommas;
 };
 
