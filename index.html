@@ -7,13 +7,22 @@
     <title>Morse Code</title>
   </head>
   <body>
+    <div class = "engInput">
     <h1>Morse Code Translator</h1>
-    <label for="fname">Input English</label>
-    <input type="text" id="phrase" name="phrase" />
+    <label for="fname">Type a word or phrase</label>
+    <input type="text" id="phrase" name="phrase" placeholder="hello"/>
     <br />
-    <button class="btn">Translate</button>
-    <output class="translation"></output>
-
+    <button class="btn1">Translate</button>
+    <output class="engTranslation"></output>
+  </div>
+  <div class = "morseInput">
+    <h1>Morse to English Translator</h1>
+    <label for="fname">Type in morse</label>
+    <input type="text" id="morse" name="morse" placeholder="-.--"/>
+    <br />
+    <button class="btn2">Translate</button>
+    <output class="morseTranslation"></output>
+  </div>
     <script src="apps.js"></script>
   </body>
 </html>
