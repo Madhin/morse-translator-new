@@ -111,7 +111,8 @@ const englishConversion = () => {
   console.log(newArr2);
   const string = newArr2.toString().toLowerCase();
   console.log(string);
-  output2.innerHTML = string;
+  const noCommas = string.replace(/,/g, "");
+  output2.innerHTML = noCommas;
 }
 
 const validate1 = () => {
